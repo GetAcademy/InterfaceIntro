@@ -1,11 +1,13 @@
-﻿namespace InterfaceIntro.LinqStuff
+﻿using InterfaceIntro.Enumers;
+
+namespace InterfaceIntro.LinqStuff
 {
     internal class LinqDemo
     {
         public static void Run()
         {
             var s = "Hei";
-            s.T
+            s.Terje(5);
 
             var numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             var numbersList = numbers.ToList();

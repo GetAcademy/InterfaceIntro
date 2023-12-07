@@ -14,5 +14,12 @@
             Console.Write(" * ");
             Console.WriteLine(_text);
         }
+
+        public void ShowHighlighted()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Show();
+            Console.ForegroundColor = ConsoleColor.White;
+        }
     }
 }

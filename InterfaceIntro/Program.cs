@@ -1,9 +1,8 @@
 ﻿using InterfaceIntro;
+using InterfaceIntro.Enumers;
 
-
-// Pause 13:03 
-
-
+EnumerDemo.Run();
+return;
 var a = new CenteredHeader("Overskrift 1");
 var b = new IndentedParagraph("Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. ");
 var c = new IndentedParagraph("Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. ");
@@ -27,6 +26,15 @@ foreach (var textElement in textElements)
 {
     textElement.Show();
 }
+
+Console.ReadKey();
+
+Console.Clear();
+foreach (var textElement in textElements)
+{
+    textElement.ShowHighlighted();
+}
+
 
 /*
  * Litt mer om testing

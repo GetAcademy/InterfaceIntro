@@ -11,12 +11,22 @@
 
         public void Show()
         {
+            Show('-');
+        }
+
+        public void Show(char paddingChar)
+        {
             var startPos = (Console.WindowWidth - _text.Length) / 2;
             var dashCount = startPos - 4;
-            var dashes = "  " + new string('-', dashCount) + "  ";
+            var dashes = "  " + new string(paddingChar, dashCount) + "  ";
             Console.Write(dashes);
             Console.Write(_text);
             Console.WriteLine(dashes);
+        }
+
+        public void ShowHighlighted()
+        {
+            Show('*');
         }
     }
 }

@@ -14,5 +14,12 @@
             Console.CursorLeft = 8;
             Console.WriteLine(_text);
         }
+
+        public void ShowHighlighted()
+        {
+            
+            Console.CursorLeft = 8;
+            Console.WriteLine(_text.ToUpper());
+        }
     }
 }

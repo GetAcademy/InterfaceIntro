@@ -1,6 +1,6 @@
 ﻿namespace InterfaceIntro
 {
-    internal class CenteredHeader
+    internal class CenteredHeader : ITextElement
     {
         private string _text;
 
@@ -13,7 +13,7 @@
         {
             var startPos = (Console.WindowWidth - _text.Length) / 2;
             var dashCount = startPos - 4;
-            var dashes = "  " + string.Empty.PadLeft(dashCount, '-') + "  ";
+            var dashes = "  " + new string('-', dashCount) + "  ";
             Console.Write(dashes);
             Console.Write(_text);
             Console.WriteLine(dashes);

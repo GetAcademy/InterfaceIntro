@@ -1,6 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using InterfaceIntro;
 
-using InterfaceIntro;
+
+// Pause 13:03 
+
 
 var a = new CenteredHeader("Overskrift 1");
 var b = new IndentedParagraph("Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. ");
@@ -11,25 +13,20 @@ var e = new IndentedParagraph("Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bl
 var f1 = new BulletPoint("a");
 var f2 = new BulletPoint("b");
 var f3 = new BulletPoint("c");
-a.Show();
-b.Show();
-c.Show();
-d.Show();
-e.Show();
-f1.Show();
-f2.Show();
-f3.Show();
+//a.Show();
+//b.Show();
+//c.Show();
+//d.Show();
+//e.Show();
+//f1.Show();
+//f2.Show();
+//f3.Show();
 
-
-
-
-/*
-    if (myTextElement is CenteredHeader)
-    {
-        var centeredHeader = (CenteredHeader)myTextElement;
-        centeredHeader.Show();
-    }
- */
+var textElements = new ITextElement[] { a, b, c, d, e, f1, f2, f3 };
+foreach (var textElement in textElements)
+{
+    textElement.Show();
+}
 
 /*
  * Litt mer om testing

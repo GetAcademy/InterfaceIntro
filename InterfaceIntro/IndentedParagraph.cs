@@ -1,6 +1,6 @@
 ﻿ namespace InterfaceIntro
 {
-    internal class IndentedParagraph
+    internal class IndentedParagraph : ITextElement
     {
         private string _text;
 
